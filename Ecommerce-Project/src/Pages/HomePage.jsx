@@ -1,9 +1,15 @@
+import axios from 'axios'
 import { Header } from '../Components/Header';
 import './HomePage.css';
 import { products } from '../../starting-code/data/products';
 
 
 export function HomePage() {
+  axios.get('http://localhost:3000/api/products')
+    .then((response) => {
+      console.log(response.data);
+    })
+
   return (
     <>
 
@@ -21,7 +27,7 @@ export function HomePage() {
                 </div>
 
                 <div className="product-name limit-text-to-2-lines">
-                {product.name}
+                  {product.name}
                 </div>
 
                 <div className="product-rating-container">
