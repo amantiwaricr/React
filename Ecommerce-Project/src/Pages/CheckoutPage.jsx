@@ -3,6 +3,7 @@
  
  export function CheckoutPage() {
   return (
+    
     <>
     <title>Checkout</title>
 
