@@ -1,9 +1,9 @@
 import axios from 'axios'
 import { useEffect, useState } from 'react';
-import './checkout-header.css'
-import './CheckoutPage.css'
 import { OrderSummary } from './OrderSummary';
 import { PaymentSummary } from './PAymentSummary';
+import './checkout-header.css'
+import './CheckoutPage.css'
 
 export function CheckoutPage({ cart }) {
   const [deliveryOptions, setDeliveryOptions] = useState([]);
